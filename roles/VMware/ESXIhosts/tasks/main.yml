@@ -1,0 +1,8 @@
+# Configure various ESXi host settings
+#
+# ESXi must have been installed and IP/Password/DNS/DNS Domain configured for mgmt access
+# SSH must be enabled on the ESXi host
+#
+# Upgrade or Install VIC Drivers, NetApp NFS VAAI Plugin, and UCS Tools
+  - include_tasks: upgrade_ESXi_drivers.yml
+#

@@ -1,0 +1,28 @@
+[vmware:children]
+#
+# This section is used to define the ESXi configuration parameters.
+# You need to provide vmotion, nfs, iSCSI-A and iSCSI-B (if needed) IP addresses and subnet masks to be configured on VMK for the hosts
+#
+# The VMware vCenter connectivity information is defined in group_vars/all.yml using following variables:
+# vcenter_hostname, vcenter_username, vcenter_password
+#
+# The ESXi host username and password is also defined (copied) in group_vars/vmware.yml esxi_username and esxi_password
+#
+esxi
+
+[vmware:vars]
+ansible_connection=ssh
+ansible_user=root
+ansible_ssh_pass="{{ password_1 }}"
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_python_interpreter=/bin/python
+
+[esxi]
+#
+aa02-esxi-01.flexpodb4.cisco.com 
+aa02-esxi-02.flexpodb4.cisco.com 
+aa02-esxi-03.flexpodb4.cisco.com
+aa02-esxi-04.flexpodb4.cisco.com 
+
+# e.g. 10.1.1.101 or Host FQDN
+# e.g. 10.1.1.102 or Host FQDN

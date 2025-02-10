@@ -1,0 +1,20 @@
+---
+# Variables for ESXi Configuration
+# Adjust the variable values as per your requirements
+#
+# Variables for ESXi driver installation/update Comment out any bundle URLs and filenames for
+# drivers that do not need to be loaded according to the Intersight Server HCL listing.
+#
+nenic_offline_bundle_url: "http://10.102.1.150/M8/vSphere8U3/Cisco-nenic_2.0.15.0-1OEM.800.1.0.20613240_24387781-package/Cisco-nenic_2.0.15.0-1OEM.800.1.0.20613240_24387781.zip"
+nenic_filename: "Cisco-nenic_2.0.15.0-1OEM.800.1.0.20613240_24387781.zip"
+nenic_ens_offline_bundle_url: "http://10.102.1.150/M8/vSphere8U3/Cisco-nenic-ens_1.0.9.0-1OEM.800.1.0.20613240_24115260-package/Cisco-nenic-ens_1.0.9.0-1OEM.800.1.0.20613240_24115260.zip"
+nenic_ens_filename: "Cisco-nenic-ens_1.0.9.0-1OEM.800.1.0.20613240_24115260.zip"
+nfnic_offline_bundle_url: "http://10.102.1.150/M8/vSphere8U3/Cisco-nfnic_5.0.0.45-1OEM.803.0.0.24022510_24409239-package/Cisco-nfnic_5.0.0.45-1OEM.803.0.0.24022510_24409239.zip"
+nfnic_filename: "Cisco-nfnic_5.0.0.45-1OEM.803.0.0.24022510_24409239.zip"
+#lsi_mr3_offline_bundle_url: "http://10.102.1.150/M7/vSphere-8.0/Broadcom-lsi-mr3_7.723.03.00-1OEM.700.1.0.15843807_20654446-package/Broadcom-lsi-mr3_7.723.03.00-1OEM.700.1.0.15843807_20654446.zip"
+##lsi_mr3_filename: "Broadcom-lsi-mr3_7.723.03.00-1OEM.700.1.0.15843807_20654446.zip"
+NetAppVAAI_offline_bundle_url: "http://10.102.1.150/M8/vSphere8U3/NetAppNasPlugin2.0.1.zip"
+NetAppVAAI_filename: "NetAppNasPlugin2.0.1.zip"
+UCS_Tools_url: "http://10.102.1.150/M8/vSphere8U3/ucs-tool-esxi_1.4.1-1OEM.zip"
+UCS_Tools_filename: "ucs-tool-esxi_1.4.1-1OEM.zip"
+
