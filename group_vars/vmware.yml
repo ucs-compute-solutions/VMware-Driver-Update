@@ -17,5 +17,5 @@ NetAppVAAI_offline_bundle_url: "http://10.102.1.150/M8/vSphere8U3/NetAppNasPlugi
 NetAppVAAI_filename: "NetAppNasPlugin2.0.1.zip"
 UCS_Tools_url: "http://10.102.1.150/M8/vSphere8U3/ucs-tool-esxi_1.4.1-1OEM.zip"
 UCS_Tools_filename: "ucs-tool-esxi_1.4.1-1OEM.zip"
-configure_nvme_ana: 'true'
-reboot_host: 'true'
+configure_nvme_ana: 'false' # Set to 'true' to configure NVMe with Asymetric Namespace Access (ANA)
+reboot_host: 'false' # Only reboot hosts here that are not running VMs
