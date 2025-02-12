@@ -1,5 +1,3 @@
-[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/ucs-compute-solutions/FlexPod-IMM-VMware)
-
 # Install or Upgrade VMware Drivers
 
 Note that the scripts in this repository have now been successfully tested with VMware vSphere 8.0 Update 3.
