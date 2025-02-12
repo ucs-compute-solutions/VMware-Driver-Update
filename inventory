@@ -6,7 +6,7 @@
 # The VMware vCenter connectivity information is defined in group_vars/all.yml using following variables:
 # vcenter_hostname, vcenter_username, vcenter_password
 #
-# The ESXi host username and password is also defined (copied) in group_vars/vmware.yml esxi_username and esxi_password
+# The ESXi host username and password is also defined (copied) in group_vars/all.yml esxi_username and esxi_password
 #
 esxi
 
@@ -19,9 +19,9 @@ ansible_python_interpreter=/bin/python
 
 [esxi]
 #
-aa02-esxi-01.flexpodb4.cisco.com 
-aa02-esxi-02.flexpodb4.cisco.com 
-aa02-esxi-03.flexpodb4.cisco.com
+#aa02-esxi-01.flexpodb4.cisco.com 
+#aa02-esxi-02.flexpodb4.cisco.com 
+#aa02-esxi-03.flexpodb4.cisco.com
 aa02-esxi-04.flexpodb4.cisco.com 
 
 # e.g. 10.1.1.101 or Host FQDN

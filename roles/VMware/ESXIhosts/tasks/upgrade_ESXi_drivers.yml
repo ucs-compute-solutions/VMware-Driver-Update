@@ -50,9 +50,10 @@
     ansible.builtin.command: esxcli software component apply -d /tmp/{{ UCS_Tools_filename }}
     when: UCS_Tools_filename is defined
 
-#  - name: Enable NVMe with ANA
-#    ansible.builtin.command: esxcfg-advcfg -s 0 /Misc/HppManageDegradedPaths
-#    when: (configure_nvme_tcp == 'true') or (configure_fc_nvme == 'true')
+  - name: Enable NVMe with ANA
+    ansible.builtin.command: esxcfg-advcfg -s 0 /Misc/HppManageDegradedPaths
+    when: configure_nvme_ana == 'true'
 
-#  - name: Reboot Host
-#    ansible.builtin.command: reboot
+  - name: Reboot Host
+    ansible.builtin.command: reboot
+    when: reboot_host == 'true'
