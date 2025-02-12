@@ -13,7 +13,7 @@ To execute various ansible playbooks, a linux based system will need to be setup
 - NetApp ONTAP: https://galaxy.ansible.com/ui/repo/published/netapp/ontap/
 - VMware: https://galaxy.ansible.com/ui/repo/published/community/vmware/
 
-# How to execute this playbooks?
+# How to execute this playbook?
 
 1.  Create a directory and clone the repository from Github with "git clone https://github.com/ucs-compute-solutions/FlexPod-IMM-VMware.git".
 2.  Check the Cisco UCS HCL selecting your server type and VMware ESXi 8.0U3 at https://ucshcltool.cloudapps.cisco.com/public/#. Checking against the listing for the exact version of VMware ESXi your are installing from the Broadcom Support site, determine the drivers needed for the version of server firmware that you plan to run.
