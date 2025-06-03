@@ -21,6 +21,6 @@ To execute this ansible playbook, a linux based system (RHEL 9 and Rocky Linux 9
 
 1.  Create a directory and clone the repository from Github with "git clone https://github.com/ucs-compute-solutions/VMware-Driver-Update.git".
 2.  Check the Cisco UCS HCL selecting your server type and VMware version at https://ucshcltool.cloudapps.cisco.com/public/#. Checking against the listing for the exact version of VMware ESXi your are installing from the Broadcom Support site, determine the drivers needed for the version of server firmware that you plan to run.
-3.  Download the needed drivers from Broadcom and the NetApp NFS VAAI plugin if necessary and place on an http: (not https:) server.
+3.  Download the needed drivers from Cisco via server VMware driver ISOs and the UCS vSphere Installation bundle and the NetApp NFS VAAI plugin if necessary and place on an http: (not https:) server.
 4.  Fill in all of the variable files in the playbook. You need to determine if you will upgrade the drivers on your servers one at a time with Maintenance Mode and reboot or just upgrade the drivers on all the servers then put each server in Maintenance Mode and reboot in sequence. Fill in the inventory file accordingly.
 5.  Execute the playbook with "ansible-playbook ./Install_ESXi_Drivers.yml -i inventory" to install or update the drivers.
